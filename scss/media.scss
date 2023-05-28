@@ -1,15 +1,24 @@
-@media (max-width: 1440px) {
-
+@media (max-width: 1919px) {
+    .banner-section {
+        padding-bottom: 55.486%;
+    }
 }
 
-@media (max-width: 1024px) {
-    
+@media (max-width: 1439px) {
+    .banner-section {
+        padding-bottom: 75%;
+    }
 }
 
-@media (max-width: 768px) {
-    
+@media (max-width: 1023px) {
+    .banner-section {
+        background-size: cover;
+        padding-bottom: 133.3%;
+    }
 }
 
-@media (max-width: 375px) {
-    
+@media (max-width: 767px) {
+    .banner-section {
+        padding-bottom: 160%;
+    }
 }

@@ -1,0 +1,42 @@
+.banner {
+    background: url(../img/main-page/logo.png), $gradient-supersoft;
+    background-position: 50% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0 50px;
+    color: #fff;
+    border-radius: 0px 0px 12px 12px;
+    width: 100%;
+    height: 0;
+    padding-bottom: 52.083%;
+}
+
+.banner  a {
+    color: #fff;
+}
+
+.banner__title {
+    position: absolute;
+    left: calc(50% - 800px/2);
+    top: calc(50% - 46px/2);
+    width: 100%;
+    max-width: 800px;
+}
+
+.banner__style  {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.banner__scroll {
+    position: absolute;
+    left: calc(50% - 42px/2);
+    bottom: 30px;
+}
+
+.banner__scroll:hover path, .banner__scroll:hover circle {
+    stroke: $color-acnet;
+}
+
