@@ -1,18 +1,207 @@
-/* Error: Undefined variable.
- *    ,
- * 32 |     color: $color-active-regular;
- *    |            ^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss\variables.scss 32:12  @import
- *   scss\style.scss 5:9        root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 32 \2502      color: $color-active-regular;\d\a    \2502             ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\variables.scss 32:12  @import\a   scss\\style.scss 5:9        root stylesheet";
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/subset-Montserrat-Regular.eot");
+  src: url("../fonts/subset-Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-Montserrat-Regular.woff2") format("woff2"), url("../fonts/subset-Montserrat-Regular.woff") format("woff"), url("../fonts/subset-Montserrat-Regular.ttf") format("truetype"), url("../fonts/subset-Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/subset-Montserrat-Bold.eot");
+  src: url("../fonts/subset-Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-Montserrat-Bold.woff2") format("woff2"), url("../fonts/subset-Montserrat-Bold.woff") format("woff"), url("../fonts/subset-Montserrat-Bold.ttf") format("truetype"), url("../fonts/subset-Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  min-width: 360px;
+  color: #000;
+  background-color: #b9b9b9;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.container--no-padding {
+  padding: 0;
+}
+
+.page-wrap {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  padding: 0 50px;
+  color: #fff;
+  border-radius: 0px 0px 12px 12px;
+}
+
+.page-wrap a {
+  color: #fff;
+}
+
+.page-wrap--position-relative {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.header__right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__contact-list {
+  display: flex;
+  align-items: center;
+}
+
+.header__contact-list--margin {
+  margin-bottom: 16px;
+}
+
+.header__contact-item {
+  display: flex;
+}
+.header__contact-item::after {
+  content: "•";
+  font-size: 40px;
+  line-height: 15px;
+  margin: 0 6px;
+}
+.header__contact-item:last-child::after {
+  content: "";
+  margin: 0;
+}
+
+.header__contact-item--addres, .header__contact-item--tel {
+  font-size: 16px;
+}
+
+.header__contact-item--tel a {
+  font-weight: 700;
+}
+
+.header__contact-item--tel, .header__contact-item--addres, .header__contact-item--fb-logo {
+  align-self: center;
+}
+
+.header__language-list {
+  display: flex;
+}
+
+.header__language-link {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  padding: 5px 7px;
+}
+.header__language-link:hover {
+  color: #F0145A;
+}
+
+.header__language-link--active {
+  background-color: #F0145A;
+  border-radius: 8px;
+}
+.header__language-link--active:hover {
+  color: #fff;
+}
+
+.cite-nav__list {
+  display: flex;
+  justify-content: end;
+}
+
+.cite-nav__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.cite-nav__link:hover {
+  color: #F0145A;
+}
+
+.cite-nav__item {
+  margin-right: 15px;
+}
+.cite-nav__item:last-child {
+  margin-right: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

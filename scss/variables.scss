@@ -4,39 +4,27 @@
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 22px;
-    font-weight: 700;
+    font-weight: 400;
     min-width: 360px;
     color: #000;
+    background-color: #b9b9b9;
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     padding: 0 60px;
 }
-
-%title-style {
-    font-size: 38px;
-    line-height: 46px;
-    font-weight: 700;
-}
-
-%link {
-    color: $color-active-regular;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-
-    &:hover {
-        color: $color-acnet;
-    }
+.container--no-padding {
+    padding: 0;
 }
 
 $color-main-basic: #fff;
@@ -72,3 +60,20 @@ $gradient-red: linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
 $gradient-supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 
 $gardient-red-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+
+%title-style {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 700;
+}
+
+%link {
+    color: $color-active-regular;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    &:hover {
+        color: $color-acnet;
+    }
+}
