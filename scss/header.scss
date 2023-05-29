@@ -4,11 +4,11 @@
     padding-top: 50px;
 }
 
-.left-header-inner {
-
+.header__mobile {
+    display: none;
 }
 
-.right-header-inner {
+.right-inner {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -17,6 +17,9 @@
 .controls {
     display: flex;
     align-items: center;
+}
+
+.controls__desktop {
     margin-bottom: 16px;
 }
 
@@ -76,6 +79,10 @@
     &:hover {
         color: #fff;
     }
+}
+
+.logo__tablet {
+    display: none;
 }
 
 .cite-nav__list {
